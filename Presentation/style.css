@@ -1,0 +1,609 @@
+/*FONTS*/
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+}
+
+/*NAV BAR */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #212121;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: #212121;
+}
+
+/*KNOPPEN NAVBAR*/
+
+.btn2 {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  border: 2px solid #fefefe;
+  text-transform: uppercase;
+  color: #fefefe;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.btn2::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% - -2px);
+  background-color: #212121;
+  transition: 0.3s ease-out;
+  transform: scaleY(1);
+}
+
+.btn2::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% - 50px);
+  background-color: #212121;
+  transition: 0.3s ease-out;
+  transform: scaleY(1);
+}
+
+.btn2:hover::before {
+  transform: translateY(-25px);
+  height: 0;
+}
+
+.btn2:hover::after {
+  transform: scaleX(0);
+  transition-delay: 0.15s;
+}
+
+.btn2:hover {
+  border: 2px solid #fefefe;
+}
+
+.btn2 span {
+  position: relative;
+  z-index: 3;
+}
+
+button {
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+}
+
+/*Button bestel*/
+
+/* Stijl voor de knoppen in het winkelmandje */
+.winkelmandje form button {
+  margin-bottom: 10px; /* Voeg wat ruimte toe onder elke knop */
+}
+
+/* Specifieke marge voor de "Winkelmandje bijwerken" knop */
+.winkelmandje form button[name="updateCart"] {
+  margin-right: 20px; /* Voeg ruimte toe aan de rechterkant van de knop */
+}
+
+.btn3 {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  border: 2px solid #212121;
+  text-transform: uppercase;
+  color: #212121;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.btn3::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% - -2px);
+  background-color: #fefefe;
+  transition: 0.3s ease-out;
+  transform: scaleY(1);
+}
+
+.btn3::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% - 50px);
+  background-color: #212121;
+  transition: 0.3s ease-out;
+  transform: scaleY(1);
+}
+
+.btn3:hover::before {
+  transform: translateY(-25px);
+  height: 0;
+}
+
+.btn3:hover::after {
+  transform: scaleX(0);
+  transition-delay: 0.15s;
+}
+
+.btn3:hover {
+  border: 2px solid #fefefe;
+}
+
+.btn3 span {
+  position: relative;
+  z-index: 3;
+}
+
+button {
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+}
+
+/*HERO*/
+.hero-image {
+  width: 100%;
+  height: auto;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero-text {
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+/*Over ons */
+.over-ons {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+/*Bestellen*/
+
+.bestel-header {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 40px;
+}
+
+/* Bestelmenu-container met achtergrondafbeelding */
+.bestelmenu-container {
+  position: relative;
+  z-index: 1;
+  margin-top: 20px; /* Voeg wat marge toe boven de bestelmenu-container */
+  overflow: hidden; /* Zorg ervoor dat de achtergrondafbeelding niet buiten de container uitsteekt */
+}
+
+.greyed-out {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.greyed-out .not-available {
+  color: red;
+  font-weight: bold;
+}
+
+.bestel-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('Images/bestelachtergrond.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.bestelmenu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparante achtergrondkleur */
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.pizza {
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparante achtergrondkleur */
+  border-radius: 10px;
+}
+
+.winkelmandje {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px; /* Voeg marge toe om ruimte rond het winkelmandje te creëren */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparante achtergrondkleur */
+  border-radius: 10px; /* Maak de hoeken afgerond */
+}
+
+.winkelmandje ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.winkelmandje ul li {
+  padding: 5px 0; /* Add some padding for better spacing */
+}
+
+/*klantgegevensforms*/
+
+.Persoonlijkegegevens {
+  text-align: center;
+  margin: 20px;
+}
+
+.accountbestaat,
+.accountbestaatniet {
+  max-width: 500px; /* Maximale breedte van de container */
+  margin: 0 auto; /* Centreer de container */
+  padding: 20px; /* Voeg wat padding toe voor een betere layout */
+  border: 1px solid #ccc; /* Voeg een rand toe */
+  border-radius: 10px; /* Voeg afgeronde hoeken toe */
+}
+
+/* Voeg margin toe tussen de containers */
+.accountbestaat {
+  margin-bottom: 20px; /* Voeg een bottom margin toe voor de eerste container */
+}
+
+.accountbestaatniet {
+  margin-top: 20px;
+  margin-bottom: 20px; /* Voeg een top margin toe voor de tweede container */
+}
+
+.accountbestaat form,
+.accountbestaatniet form {
+  display: flex;
+  flex-direction: column;
+}
+
+.accountbestaat form label,
+.accountbestaat form input,
+.accountbestaat form button,
+.accountbestaatniet form label,
+.accountbestaatniet form input,
+.accountbestaatniet form select,
+.accountbestaatniet form button,
+.accountbestaatniet form div label,
+.accountbestaatniet form div input {
+  margin-bottom: 10px; /* Voeg wat ruimte toe tussen de elementen */
+}
+
+.accountbestaatniet form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.accountbestaat form button,
+.accountbestaatniet form button {
+  align-self: flex-start; /* Optioneel: Zorg ervoor dat de knop niet over de hele breedte van het formulier gaat */
+  max-width: 200px; /* Maximale breedte van de knop */
+}
+
+.accountbestaat form input,
+.accountbestaatniet form input,
+.accountbestaatniet form select {
+  max-width: 100%; /* Zorg ervoor dat de invoervelden niet breder zijn dan de container */
+  width: 100%; /* Zorg ervoor dat de invoervelden de volledige breedte van de container innemen */
+}
+
+.accountbestaat button {
+  margin: 0 auto; /* Centreer de knop */
+  margin-top: 15px;
+}
+
+.accountbestaatniet button {
+  margin: 0 auto; /* Centreer de knop */
+  margin-top: 15px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Voeg wat ruimte toe tussen de checkbox en de rest van het formulier */
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin-right: 10px; /* Voeg wat ruimte toe tussen de checkbox en het label */
+}
+
+/*FOOTER*/
+
+.footer {
+  background-color: #212121;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+  clear: both;
+}
+
+.footer .Pizzeria.info {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer .Contact,
+.footer .Openingsuren {
+  width: 45%;
+}
+
+.footer h3 {
+  margin-top: 0;
+}
+
+.footer .Openingsuren p {
+  text-align: right;
+}
+
+.footer .Openingsuren h3 {
+  text-align: right;
+}
+
+.footer .Contact p {
+  text-align: left;
+}
+
+.footer .Contact h3 {
+  text-align: left;
+}
+
+.footer .Contact h3,
+.footer .Contact p {
+  margin: 0;
+  padding: 5px 0;
+}
+
+.footer .Contact p {
+  font-weight: bold;
+}
+
+/* Klantgegevens formulier styling */
+.klantgegevens-container {
+  margin: 20px; /* Voeg marge aan de onderkant toe */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.klantgegevens-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.klantgegevens-container form label,
+.klantgegevens-container form input,
+.klantgegevens-container form select,
+.klantgegevens-container form button {
+  margin-bottom: 10px;
+}
+
+.klantgegevens-container form button {
+  align-self: flex-start;
+  max-width: 200px;
+}
+
+/* Centreer de header */
+.Persoonlijkegegevens {
+  text-align: center;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.center-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Algemene button styling */
+.btn3 {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  border: 2px solid #212121;
+  text-transform: uppercase;
+  color: #212121;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.btn3::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% - -2px);
+  background-color: #fefefe;
+  transition: 0.3s ease-out;
+  transform: scaleY(1);
+}
+
+.btn3::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% - 50px);
+  background-color: #212121;
+  transition: 0.3s ease-out;
+  transform: scaleY(1);
+}
+
+.btn3:hover::before {
+  transform: translateY(-25px);
+  height: 0;
+}
+
+.btn3:hover::after {
+  transform: scaleX(0);
+  transition-delay: 0.15s;
+}
+
+.btn3:hover {
+  border: 2px solid #fefefe;
+}
+
+.btn3 span {
+  position: relative;
+  z-index: 3;
+}
+
+button {
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+}
+
+.content-wrap {
+  max-width: 600px; /* Pas de breedte aan zoals gewenst */
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px; /* Voeg padding toe voor ruimte binnen de container */
+  border: 1px solid #ccc; /* Voeg een rand toe */
+  border-radius: 10px; /* Maak de hoeken afgerond */
+  background-color: #fff; /* Stel een achtergrondkleur in */
+}
+
+.bestelling-details,
+.leveringsadres {
+  margin-bottom: 20px; /* Voeg marge toe onder de divs voor ruimte */
+}
+
+.bestelling-details h2,
+.leveringsadres h2 {
+  margin-top: 0; /* Verwijder de bovenmarge */
+}
+
+.center-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: none; /* Verwijder de standaard lijststijl */
+  padding: 0; /* Verwijder de standaard padding */
+}
+
+ul li {
+  padding: 5px 0; /* Voeg padding toe tussen de items */
+}
